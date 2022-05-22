@@ -1,23 +1,21 @@
 <?php
 
-function connect($user,$password){
-            try {
-                //code...
-                $conn = new PDO('mysql:host=localhost;dbname=OFPPT_PRO;port=3306',$user,$password);
-               
+$servername = "localhost";
+$dbname = "OFPPT_PRO";
+$port = "3306";
+$user = "root";
+$password = "";
 
-
-
-
-
-
-            } catch (PDOException $e ) {
-                //throw $th;
-                $error = $e->getMessage();
-                print_r($error);
-            }
+try {
+    
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname;port=$port", $user, $password);
+    
+} catch (PDOException $e) {
+    
+    print_r($e->getMessage());
 
 }
+
 
 
 
