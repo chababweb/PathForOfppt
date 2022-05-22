@@ -1,6 +1,7 @@
 <?php
 
-  include('scriptsPHP/connect.php');
+  include ('scriptsPHP/connect.php');
+  include 'scriptsPHP/method.php';
 ?>
 
 <!DOCTYPE html>
