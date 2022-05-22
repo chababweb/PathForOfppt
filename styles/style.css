@@ -113,4 +113,27 @@ body {
   }
 }
 
+.active{
+    margin-left: 5px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    font-weight: 700 !important;
+    background-color: skyblue !important;
+    border: 2px solid skyblue !important;
+    border-radius: 4px !important;
+    animation: fadeInAnimation ease 3s !important;
+    animation-iteration-count: 1 !important;
+    animation-fill-mode: forwards !important;
+}
+
+.active:hover{
+    background-color: transparent !important;
+    border: 2px solid yellow !important;
+    color: yellow !important;
+    transition: 1s !important;
+    animation: fadeInAnimation ease 3s !important;
+    animation-iteration-count: 1 !important;
+    animation-fill-mode: forwards !important;
+}
+
 
