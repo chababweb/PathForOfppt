@@ -94,6 +94,7 @@
                     <!-- Check if user is logged in or not -->
                     <?php
                         if(isset($_SESSION['user'])){
+                            // if user active we will show his name in the active button, if not we will show login button
                             echo '<li class="nav-item">
                                     <a class="nav-link active" href="logout.php">'.$_SESSION['user'].'</a>
                                 </li>';
