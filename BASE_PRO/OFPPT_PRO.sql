@@ -7,6 +7,7 @@ V_Pass VARCHAR(40) check(V_Pass = Pass),
 Nom_Pro VARCHAR(20),
 Prenom_Pro VARCHAR(20),
 DateNaiss DATE,
+Tel INT,
 TypeP VARCHAR(20) DEFAULT 'Stagiaire'
 )
 
