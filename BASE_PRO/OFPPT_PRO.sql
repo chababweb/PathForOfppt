@@ -93,13 +93,13 @@ PRIMARY KEY(id_Exam,CIN_STG)
 
 
 CREATE USER 'Abdessamad'@'localhost' IDENTIFIED BY 'Viserion'
-GRANT ALL ON OFPPT_PRO.* TO 'Fire_Knight'@'localhost'
+GRANT ALL ON OFPPT_PRO.* TO 'Abdessamad'@'localhost'
 CREATE USER 'Mohamed'@'localhost' IDENTIFIED BY 'Knucker'
-GRANT ALL ON OFPPT_PRO.* TO 'Water_Knight'@'localhost'
+GRANT ALL ON OFPPT_PRO.* TO 'Mohamed'@'localhost'
 CREATE USER 'Abdellah'@'localhost' IDENTIFIED BY 'Saphira'
-GRANT ALL ON OFPPT_PRO.* TO 'Air_Knight'@'localhost'
+GRANT ALL ON OFPPT_PRO.* TO 'Abdellah'@'localhost'
 CREATE USER 'Imad_Eddine'@'localhost' IDENTIFIED BY 'Balerion'
-GRANT ALL ON OFPPT_PRO.* TO 'Thunder_Knight'@'localhost'
+GRANT ALL ON OFPPT_PRO.* TO 'Imad_Eddine'@'localhost'
 
 
 
