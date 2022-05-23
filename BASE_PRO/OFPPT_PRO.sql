@@ -3,32 +3,19 @@ USE OFPPT_PRO
 CREATE TABLE profil
 (Email VARCHAR(40) PRIMARY KEY,
 Pass VARCHAR(40),
-TypeP VARCHAR(20)
-)
-CREATE TABLE Formateur
-(CIN_For VARCHAR(20) PRIMARY KEY,
-Nom_For VARCHAR(20),
-Prenom_For VARCHAR(20),
+V_Pass VARCHAR(40),
+Nom_Pro VARCHAR(20),
+Prenom_Pro VARCHAR(20),
 DateNaiss DATE,
-Email VARCHAR(40),
-CONSTRAINT fk_1 FOREIGN KEY (Email) REFERENCES profil(Email)
+TypeP VARCHAR(20) DEFAULT 'Stagiaire'
 )
-CREATE TABLE Stagiaire
-(CIN_STG VARCHAR(20) PRIMARY KEY,
-Nom_STG VARCHAR(20),
-Prenom_STG VARCHAR(20),
-DateNaiss DATE,
-Email VARCHAR(40),
-id_Group INT,
-CONSTRAINT fk_2 FOREIGN KEY (Email) REFERENCES profil(Email),
-CONSTRAINT fk_6 FOREIGN KEY (id_Group) REFERENCES Group_(id_Group)
-)
-DROP TABLE stagiaire
+
 CREATE TABLE Filiere
 (Code_Fil VARCHAR(20) PRIMARY KEY,
 Nom_Fil VARCHAR(20),
 Description TEXT 
 )
+
 CREATE TABLE Gestion_Filiere
 (Code_Fil VARCHAR(20),
 CIN_For VARCHAR(20),
@@ -105,13 +92,13 @@ PRIMARY KEY(id_Exam,CIN_STG)
 )
 
 
-CREATE USER 'Fire_Knight'@'localhost' IDENTIFIED BY 'Viserion'
+CREATE USER 'Abdessamad'@'localhost' IDENTIFIED BY 'Viserion'
 GRANT ALL ON OFPPT_PRO.* TO 'Fire_Knight'@'localhost'
-CREATE USER 'Water_Knight'@'localhost' IDENTIFIED BY 'Knucker'
+CREATE USER 'Mohamed'@'localhost' IDENTIFIED BY 'Knucker'
 GRANT ALL ON OFPPT_PRO.* TO 'Water_Knight'@'localhost'
-CREATE USER 'Air_Knight'@'localhost' IDENTIFIED BY 'Saphira'
+CREATE USER 'Abdellah'@'localhost' IDENTIFIED BY 'Saphira'
 GRANT ALL ON OFPPT_PRO.* TO 'Air_Knight'@'localhost'
-CREATE USER 'Thunder_Knight'@'localhost' IDENTIFIED BY 'Balerion'
+CREATE USER 'Imad_Eddine'@'localhost' IDENTIFIED BY 'Balerion'
 GRANT ALL ON OFPPT_PRO.* TO 'Thunder_Knight'@'localhost'
 
 
