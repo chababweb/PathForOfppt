@@ -3,7 +3,7 @@ USE OFPPT_PRO
 CREATE TABLE profil
 (Email VARCHAR(40) PRIMARY KEY,
 Pass VARCHAR(40),
-V_Pass VARCHAR(40),
+V_Pass VARCHAR(40) check(V_Pass = Pass),
 Nom_Pro VARCHAR(20),
 Prenom_Pro VARCHAR(20),
 DateNaiss DATE,
