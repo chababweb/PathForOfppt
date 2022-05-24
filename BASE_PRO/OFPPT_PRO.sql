@@ -17,29 +17,9 @@ Nom_Fil VARCHAR(20),
 Description TEXT 
 )
 
-CREATE TABLE Gestion_Filiere
-(Code_Fil VARCHAR(20),
-CIN_For VARCHAR(20),
-CONSTRAINT fk_3 FOREIGN KEY (Code_Fil) REFERENCES Filiere(Code_Fil),
-CONSTRAINT fk_4 FOREIGN KEY (CIN_For) REFERENCES Formateur(CIN_For),
-PRIMARY KEY(CIN_For,Code_Fil)
-)
-CREATE TABLE Group_
-(id_Group INT PRIMARY KEY,
-Nom_Group VARCHAR(20),
-Nbr_STG INT,
-Date_Debut DATE,
-Date_Fin DATE,
-Code_Fil VARCHAR(20),
-CONSTRAINT fk_5 FOREIGN KEY (Code_Fil) REFERENCES Filiere(Code_Fil)
-)
-CREATE TABLE Responsabiliter_Group
-(id_Group INT,
-CIN_For VARCHAR(20),
-CONSTRAINT fk_7 FOREIGN KEY (id_Group) REFERENCES Group_(id_Group),
-CONSTRAINT fk_8 FOREIGN KEY (CIN_For) REFERENCES Formateur(CIN_For),
-PRIMARY KEY(CIN_For,id_Group)
-)
+
+
+
 CREATE TABLE Post
 (id_Post INT PRIMARY KEY AUTO_INCREMENT,
 contenu TEXT,
